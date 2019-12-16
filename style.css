@@ -4,6 +4,15 @@
   position: absolute;
 }
 
+button, input[type="submit"], input[type="reset"] {
+  background: none;
+  color: inherit;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
 .spacerTop {
   padding-left: 80px;
   padding-top: 20px;
@@ -53,9 +62,12 @@
 }
 
 .spacerBottom {
-  float: right;
-  margin-right: 3vw;
-  margin-top: 15vh;
+  position:fixed;
+  right: 0;
+  bottom:0;
+  margin-right: 2%;
+  margin-bottom: 2%;
+
 
 }
 
@@ -80,6 +92,7 @@
   font-size: 40px;
   font-weight: 100;
   padding: 10px;
+
 }
 
 .rowSquare {
@@ -133,3 +146,188 @@
 
 }
  
+
+
+/* tablet landscape*/
+
+
+@media (orientation: landscape) and (min-device-width : 800px) and (max-device-width : 1300px) {
+
+  .background {
+    height: calc(var(--vh, 1vh) * 100);
+    width: calc(var(--vw, 1vw) * 100);
+    position: absolute;
+  }
+
+
+  button, input[type="submit"], input[type="reset"] {
+    background: none;
+    color: inherit;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+
+  .spacerTop {
+    padding-left: 20px;
+    padding-top: 10px;
+    height: calc(var(--vh, 1vh) * 20);
+    width: calc(var(--vw, 1vw) * 100);
+
+  }
+
+  .title {
+    width: 120px;
+    height: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    font-weight: 100;
+  }
+  
+  .score {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 10px 0px 0px 0px;
+
+  }
+  
+  
+  .spacerMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    height: calc(var(--vh, 1vh) * 55);
+    width: calc(var(--vw, 1vw) * 100);
+  
+  }
+  
+  #mainScreen {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  
+  }
+  
+  .instruction {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 0px;
+  }
+  
+  .boardC {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: calc(var(--vh, 1vh) * 100);
+    width: calc(var(--vw, 1vw) * 100);
+    font-size: 25px;
+  }
+  
+  .boardG {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+
+   
+  }
+  
+  .spacerBottom {
+    position:fixed;
+    right: 0;
+    bottom:0;
+    margin-right: 3vw;
+    margin-bottom: 5vh;
+  
+  }
+
+  #winnerAnnouncer {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
+  
+  }
+  
+
+  .rowSquare {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+  
+  .unitSquare {
+    background: #00aaff;
+    height: 120px !important;
+    width: 120px !important;
+    color: white;
+    font-size: 50px;
+    font-weight: 100;
+  }
+  
+  .selectSquare {
+    background: #00aaff;
+    height: 120px !important;
+    width: 120px !important;
+    color: white;
+    font-size: 50px;
+    font-weight: 100;
+  }
+  
+  #reset {
+    background: #f44336;
+    height: 50px  !important;
+    width: 80px !important;
+    color: white;
+    font-size: 25px;
+    font-weight: 200;
+    margin-top: 10px;
+    
+    text-align: center;
+  }
+  
+  #restart {
+    background: #00aaff;
+    height: 50px  !important;
+    width: 90px !important;
+    color: white;
+    font-size: 25px !important;
+    font-weight: 200;
+    text-align: center;
+
+    
+  }
+  
+  .controlRow{
+    margin: 0 auto;
+  
+  }
+   
+
+
+  }
+
+/* tablet portrait*/
+
+
+@media (orientation: portrait) and (max-device-width : 1200px) {
+.cardContainer{
+    height: 29%;
+    margin-bottom: 35%;
+
+  }
+  .card{
+    max-width: 18.75vw;
+    height: 13.25vh;
+  }
+}
