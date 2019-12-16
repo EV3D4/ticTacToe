@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+  jQuery.fn.redraw = function() {
+    this.css('display', 'none'); 
+    var temp = this[0].offsetHeight;
+    this.css('display', '');
+    temp = this[0].offsetHeight;
+};
+
+
   var input;
   var numberOfPlayers;
   var gameOver = 0;
@@ -21,7 +29,12 @@ $(document).ready(function() {
     $(".unitSquare").empty();
     $(".unitSquare").css("background", "#00aaff");
 
+
+
     document.getElementById('mainScreen').innerHTML = "<div id=mainScreen><div class=boardG><div class=rowSquare><button type=\"button\" class=unitSquare id=\"11\"><button type=\"button\" class= unitSquare id=12><button type=\"button\" class=unitSquare id=13></div><div class=rowSquare><button type=\"button\" class=unitSquare id=21><button type=\"button\" class=unitSquare id=22><button type=\"button\" class=unitSquare id=23></div><div class=rowSquare><button type=\"button\" class=unitSquare id=31><button type=\"button\" class=unitSquare id=32><button type=\"button\" class=unitSquare id=33></div></div>";
+    $('.unitSquare').redraw();
+
+
     if (firstPlayer == 1 && numberOfPlayers == 1)
       computer();
 
@@ -62,6 +75,7 @@ $(document).ready(function() {
     $(".firstPlayer").css("color", "#f44336");
     $(".secondPlayer").css("color", "black");
     document.getElementById('mainScreen').innerHTML = "<div id=mainScreen><div class=boardG><div class=rowSquare><button type=\"button\" class=unitSquare id=\"11\"><button type=\"button\" class= unitSquare id=12><button type=\"button\" class=unitSquare id=13></div><div class=rowSquare><button type=\"button\" class=unitSquare id=21><button type=\"button\" class=unitSquare id=22><button type=\"button\" class=unitSquare id=23></div><div class=rowSquare><button type=\"button\" class=unitSquare id=31><button type=\"button\" class=unitSquare id=32><button type=\"button\" class=unitSquare id=33></div></div>";
+    $('.unitSquare').redraw();
 
   });
   $(document.body).on('click', '#OPlayer', function() {
@@ -70,6 +84,8 @@ $(document).ready(function() {
     $(".firstPlayer").css("color", "black");
     $(".secondPlayer").css("color", "#f44336");
     document.getElementById('mainScreen').innerHTML = "<div id=mainScreen><div class=boardG><div class=rowSquare><button type=\"button\" class=unitSquare id=\"11\"><button type=\"button\" class= unitSquare id=12><button type=\"button\" class=unitSquare id=13></div><div class=rowSquare><button type=\"button\" class=unitSquare id=21><button type=\"button\" class=unitSquare id=22><button type=\"button\" class=unitSquare id=23></div><div class=rowSquare><button type=\"button\" class=unitSquare id=31><button type=\"button\" class=unitSquare id=32><button type=\"button\" class=unitSquare id=33></div></div>";
+    $('.unitSquare').redraw();
+
     if (numberOfPlayers == 1)
       computer();
 
