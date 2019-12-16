@@ -369,7 +369,7 @@ button, input[type="submit"], input[type="reset"] {
   .spacerTop {
     padding-left: 20px;
     padding-top: 10px;
-    height: calc(var(--vh, 1vh) * 17);
+    height: calc(var(--vh, 1vh) * 15);
     width: calc(var(--vw, 1vw) * 100);
 
   }
@@ -449,7 +449,7 @@ button, input[type="submit"], input[type="reset"] {
 
   #winnerAnnouncer {
     font-family: 'Raleway', sans-serif;
-    font-size: 25px;
+    font-size: 45px;
     font-weight: 100;
     text-align: center;
 
