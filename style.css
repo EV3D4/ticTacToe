@@ -137,6 +137,7 @@ button, input[type="submit"], input[type="reset"] {
   font-size: 35px;
   font-weight: 200;
   text-align: center;
+  margin-top: 20px;
 
   
 }
@@ -172,7 +173,7 @@ button, input[type="submit"], input[type="reset"] {
   .spacerTop {
     padding-left: 20px;
     padding-top: 10px;
-    height: calc(var(--vh, 1vh) * 20);
+    height: calc(var(--vh, 1vh) * 15);
     width: calc(var(--vw, 1vw) * 100);
 
   }
@@ -215,10 +216,10 @@ button, input[type="submit"], input[type="reset"] {
   
   .instruction {
     font-family: 'Raleway', sans-serif;
-    font-size: 25px;
+    font-size: 45px;
     text-align: center;
     font-weight: 100;
-    margin-bottom: 0px;
+    margin-bottom: -50px;
   }
   
   .boardC {
@@ -252,9 +253,10 @@ button, input[type="submit"], input[type="reset"] {
 
   #winnerAnnouncer {
     font-family: 'Raleway', sans-serif;
-    font-size: 25px;
+    font-size: 45px;
     font-weight: 100;
     text-align: center;
+
   
   }
   
@@ -317,17 +319,196 @@ button, input[type="submit"], input[type="reset"] {
 
   }
 
-/* tablet portrait*/
+/* mobile portrait*/
 
 
 @media (orientation: portrait) and (max-device-width : 1200px) {
-.cardContainer{
-    height: 29%;
-    margin-bottom: 35%;
+  .spacerBottom {
+    position:fixed;
+    right: 0;
+    bottom:0;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  
+  }
+
+
+  #reset {
+    background: #f44336;
+    height: 100px  !important;
+    width: 150px !important;
+    color: white;
+    font-size: 55px;
+    font-weight: 300;
+    margin-top: 10px;
+    
+    text-align: center;
+  }
+}
+/* mobile landscape*/
+
+
+@media (orientation: landscape) and (max-device-width : 800px) {
+ 
+  .background {
+    height: calc(var(--vh, 1vh) * 100);
+    width: calc(var(--vw, 1vw) * 100);
+    position: absolute;
+  }
+
+
+  button, input[type="submit"], input[type="reset"] {
+    background: none;
+    color: inherit;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+
+  .spacerTop {
+    padding-left: 20px;
+    padding-top: 10px;
+    height: calc(var(--vh, 1vh) * 17);
+    width: calc(var(--vw, 1vw) * 100);
 
   }
-  .card{
-    max-width: 18.75vw;
-    height: 13.25vh;
+
+  .title {
+    width: 120px;
+    height: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    font-weight: 100;
   }
+  
+  .score {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 10px 0px 0px 0px;
+
+  }
+  
+  
+  .spacerMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    height: calc(var(--vh, 1vh) * 45);
+    width: calc(var(--vw, 1vw) * 100);
+  
+  }
+  
+  #mainScreen {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  
+  }
+  
+  .instruction {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: -50px;
+  }
+  
+  .boardC {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: calc(var(--vh, 1vh) * 100);
+    width: calc(var(--vw, 1vw) * 100);
+    font-size: 25px;
+  }
+  
+  .boardG {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+
+   
+  }
+  
+  .spacerBottom {
+    position:fixed;
+    right: 0;
+    top:0;
+    margin-right: 0vw;
+    margin-top: 60vh;
+  
+  }
+
+  #winnerAnnouncer {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
+
+  
+  }
+  
+
+  .rowSquare {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+  
+  .unitSquare {
+    background: #00aaff;
+    height: 70px !important;
+    width: 70px !important;
+    color: white;
+    font-size: 50px;
+    font-weight: 100;
+  }
+  
+  .selectSquare {
+    background: #00aaff;
+    height: 70px !important;
+    width: 70px !important;
+    color: white;
+    font-size: 50px;
+    font-weight: 100;
+  }
+  
+  #reset {
+    background: #f44336;
+    height: 50px  !important;
+    width: 80px !important;
+    color: white;
+    font-size: 25px;
+    font-weight: 200;
+    margin-top: 10px;
+    
+    text-align: center;
+  }
+  
+  #restart {
+    background: #00aaff;
+    height: 50px  !important;
+    width: 90px !important;
+    color: white;
+    font-size: 25px !important;
+    font-weight: 200;
+    text-align: center;
+
+    
+  }
+  
+  .controlRow{
+    margin: 0 auto;
+  
+  }
+   
 }
