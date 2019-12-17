@@ -172,7 +172,7 @@ button, input[type="submit"], input[type="reset"] {
 
   .spacerTop {
     padding-left: 20px;
-    padding-top: 10px;
+
     height: calc(var(--vh, 1vh) * 15);
     width: calc(var(--vw, 1vw) * 100);
 
@@ -182,15 +182,15 @@ button, input[type="submit"], input[type="reset"] {
     width: 120px;
     height: 30px;
     font-family: 'Raleway', sans-serif;
-    font-size: 2em;
-    font-weight: 100;
+    font-size: 3em;
+    font-weight: 200;
   }
   
   .score {
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
-    font-weight: 100;
-    padding: 10px 0px 0px 0px;
+    font-weight: 200;
+    padding: 30px 0px 0px 0px;
 
   }
   
@@ -216,10 +216,11 @@ button, input[type="submit"], input[type="reset"] {
   
   .instruction {
     font-family: 'Raleway', sans-serif;
-    font-size: 45px;
+    font-size: 40px;
     text-align: center;
-    font-weight: 100;
-    margin-bottom: -50px;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: -40px;
   }
   
   .boardC {
@@ -273,8 +274,9 @@ button, input[type="submit"], input[type="reset"] {
     height: 120px !important;
     width: 120px !important;
     color: white;
-    font-size: 50px;
-    font-weight: 100;
+    font-size: 75px;
+    font-weight: 200;
+    padding-bottom: 50px;
   }
   
   .selectSquare {
@@ -282,8 +284,8 @@ button, input[type="submit"], input[type="reset"] {
     height: 120px !important;
     width: 120px !important;
     color: white;
-    font-size: 50px;
-    font-weight: 100;
+    font-size: 75px;
+    font-weight: 200;
   }
   
   #reset {
