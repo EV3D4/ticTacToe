@@ -7,7 +7,6 @@ $(document).ready(function() {
     temp = this[0].offsetHeight;
 };
 
-
   var input;
   var numberOfPlayers;
   var gameOver = 0;
