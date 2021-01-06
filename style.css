@@ -108,6 +108,8 @@ button, input[type="submit"], input[type="reset"] {
   color: white;
   font-size: 100px;
   font-weight: 200;
+  border-style: none!important;
+  margin: 1px;
 }
 
 .selectSquare {
@@ -117,6 +119,8 @@ button, input[type="submit"], input[type="reset"] {
   color: white;
   font-size: 100px;
   font-weight: 200;
+  border-style: none!important;
+  margin: 1px;
 }
 
 #reset {
@@ -127,6 +131,8 @@ button, input[type="submit"], input[type="reset"] {
   font-size: 35px;
   font-weight: 200;
   text-align: center;
+  border-style: none!important;
+  margin: 1px;
 }
 
 #restart {
@@ -138,6 +144,8 @@ button, input[type="submit"], input[type="reset"] {
   font-weight: 200;
   text-align: center;
   margin-top: 20px;
+  border-style: none!important;
+  margin: 1px;
 
   
 }
